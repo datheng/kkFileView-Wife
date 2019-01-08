@@ -37,6 +37,15 @@ rm -rf /var/cache/oracle-jdk8-installer;
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
 
+# install maven and build kk-fileview
+RUN  apt-get update -y && \
+apt install -y maven && \
+git clone -b prod https://gitee.com/datheng/file-online-preview.git && \
+cd file-online-preview && \
+mvn package -DskipTests && \
+mv jodconverter-web/target/*.jar /  && \
+cd \ && \
+rm -rf file-online-preview
 
 # Install wget
 RUN apt-get update -y && \
