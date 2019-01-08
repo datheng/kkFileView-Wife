@@ -1,9 +1,10 @@
 #  kkFileView-Wife
 
 #### 介绍
-kkFileView/file-online-preview 伴侣/老婆， 一键部署 kkFileView/file-online-preview到阿里云，腾讯云，华为云或者你自己的电脑。
+kkFileView/file-online-preview 伴侣/老婆， 一键部署 kkFileView/file-online-preview到阿里云，腾讯云，华为云或者你自己的系统。
 
-https://gitee.com/kekingcn/file-online-preview 
+
+kkFileView： https://gitee.com/kekingcn/file-online-preview 
 项目为文件文档在线预览项目解决方案，对标业内付费产品有【永中office】【office365】【idocv】等，该项目使用流行的spring boot搭建，易上手和部署，基本支持主流办公文档的在线预览，如doc,docx,Excel,pdf,txt,zip,rar,图片等等
 
 #### 软件架构
