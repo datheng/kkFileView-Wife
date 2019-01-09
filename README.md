@@ -48,6 +48,9 @@ https://docs.docker.com/compose/install/
 
     docker-compose -f filePreview.yml up -d
 
+浏览器打开： http://x.x.x.x:8012 （x.x.x.x 为安装服务器ip地址），如下图，就可以上传和预览啦！
+![首页](https://images.gitee.com/uploads/images/2019/0109/135824_71f74b4f_744475.png "屏幕截图.png")
+
 #### 参与贡献
 
 1. Fork 本仓库
