@@ -21,18 +21,19 @@ kkFileView： https://gitee.com/kekingcn/file-online-preview
 #### 安装教程
 
 1. 安装docker
-    - Windows Docker安装：      
-         https://docs.docker.com/docker-for-windows/
+    - Windows Docker安装：         https://docs.docker.com/docker-for-windows/
     - Mac Docker 安装： 
          https://docs.docker.com/docker-for-ma/
     - Ubuntu Docker 安装： 
          https://docs.docker.com/install/linux/docker-ce/ubuntu/
-2. 安装docker-compose
+2. 安装docker-compose(可选）:
+https://docs.docker.com/compose/install/
 
 
 #### 使用说明
 
-1.docker run
+
+方法1 docker run
 
     - 运行 redis
 
@@ -41,7 +42,7 @@ kkFileView： https://gitee.com/kekingcn/file-online-preview
 
     docker run --name filepreview --restart=always -d  --network=host datheng/kk_fileview_wife
 
-1.docker-compose
+方法2 docker-compose
 
     保存 文件 kk-filePreview.yml 到目标机器， 然后运行
 
