@@ -80,6 +80,6 @@ RUN mkdir -p  /home/filepreview/file-preview/convertedFile/demo/
 
 EXPOSE  8012 8012/udp
 
-ADD *.jar app.jar
+ADD /*.jar app.jar
 
 ENTRYPOINT ["./entrypoint.sh"]
