@@ -71,6 +71,7 @@ WORKDIR /home/filepreview
 ADD entrypoint.sh entrypoint.sh
 USER root
 RUN chmod 755 entrypoint.sh && chown filepreview:root entrypoint.sh
+RUN mv /*.jar app.jar
 
 # Copy fonts
 ADD fallback /usr/share/fonts/
@@ -80,6 +81,6 @@ RUN mkdir -p  /home/filepreview/file-preview/convertedFile/demo/
 
 EXPOSE  8012 8012/udp
 
-RUN mv /*.jar app.jar
+
 
 ENTRYPOINT ["./entrypoint.sh"]
