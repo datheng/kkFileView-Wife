@@ -45,7 +45,7 @@ git clone -b prod https://gitee.com/datheng/file-online-preview.git && \
 cd file-online-preview && \
 mvn package -DskipTests && \
 mv jodconverter-web/target/*.jar /  && \
-cd \ && \
+cd / && \
 rm -rf file-online-preview
 
 # Install wget
