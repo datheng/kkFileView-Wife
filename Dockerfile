@@ -37,9 +37,10 @@ rm -rf /var/cache/oracle-jdk8-installer;
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
 
-# install maven and build kk-fileview
+# install maven, git and build kk-fileview
 RUN  apt-get update -y && \
 apt install -y maven && \
+apt install -y git && \
 git clone -b prod https://gitee.com/datheng/file-online-preview.git && \
 cd file-online-preview && \
 mvn package -DskipTests && \
