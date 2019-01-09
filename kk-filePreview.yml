@@ -1,0 +1,20 @@
+version: '2'
+services:
+    filepreview-app:
+            network_mode: host
+            restart: always
+            container_name: filepreview
+            image: datheng/kk_fileview_wife
+            ports:
+               - 8012:8012
+            environment:
+                # - _JAVA_OPTIONS=-Xmx512m -Xms256m
+                - SPRING_PROFILES_ACTIVE=prod,swagger
+
+    redis-app:
+            network_mode: host
+            restart: always
+            container_name: redis
+            image: redis:4
+            ports:
+               - 6379:6379

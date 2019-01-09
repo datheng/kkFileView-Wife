@@ -1,3 +1,8 @@
+#### [阿里云限量红包](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=3ua1yzxw)：
+本站推荐的用户，限时领 “最高1888元红包” 。云产品通用红包，可叠加官网常规优惠使用。 
+如果你需要帮助部署本应用到阿里云，请QQ联系<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2::52" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+
+
 #  kkFileView-Wife
 
 #### 介绍
@@ -7,24 +12,32 @@ kkFileView： https://gitee.com/kekingcn/file-online-preview
 项目为文件文档在线预览项目解决方案，对标业内付费产品有【永中office】【office365】【idocv】等，该项目使用流行的spring boot搭建，易上手和部署，基本支持主流办公文档的在线预览，如doc,docx,Excel,pdf,txt,zip,rar,图片等等
 
 #### 软件架构
-软件架构说明
+基于docker部署，5分钟搞定，节省时间，保证可用。
 
 
 #### 安装教程
 
-1. docker 安装
-    1.1 Windows Docker 安装： https://docs.docker.com/docker-for-windows/
-    1.2 Mac Docker 安装： https://docs.docker.com/docker-for-mac/
-    1.3 Ubuntu Docker 安装： https://docs.docker.com/install/linux/docker-ce/ubuntu/
-2. 主机
-3. xxxx
+*1 安装docker
+   *1.1  Windows Docker 安装：      
+         https://docs.docker.com/docker-for-windows/
+    *1.2 Mac Docker 安装： 
+         https://docs.docker.com/docker-for-mac/
+    *1.3 Ubuntu Docker 安装： 
+         https://docs.docker.com/install/linux/docker-ce/ubuntu/
+*2 安装docker-compose
+
 
 #### 使用说明
 
-1. docker run
+*1. docker run
+    运行 redis
+    docker run --name redis --restart=always  -p 6379:6379 -d redis:4
+    运行 filePreview
+    docker run --name filepreview --restart=always -d  --network=host datheng/kk_fileview_wife
 
-2. docker-compose
-
+*2. docker-compose
+    保存 文件 kk-filePreview.yml 到目标机器， 然后运行
+    docker-compose -f filePreview.yml up -d
 
 #### 参与贡献
 
@@ -33,12 +46,6 @@ kkFileView： https://gitee.com/kekingcn/file-online-preview
 3. 提交代码
 4. 新建 Pull Request
 
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+***
+### 关注微信公众号，第一时间获取项目最新动向，即将推出视频教程
+![](https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180708/qr.jpg "微信公众号")
