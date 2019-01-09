@@ -48,4 +48,4 @@ kkFileView： https://gitee.com/kekingcn/file-online-preview
 
 ***
 ### 关注微信公众号，第一时间获取项目最新动向，即将推出视频教程
-![](https://platform-wxmall.oss-cn-beijing.aliyuncs.com/upload/20180708/qr.jpg "微信公众号")
+![IT帮 微信公众号](https://images.gitee.com/uploads/images/2019/0109/113105_3693297b_744475.jpeg "qrcode_for_gh_f9293db43b7c_258.jpg")
