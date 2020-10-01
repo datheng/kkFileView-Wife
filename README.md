@@ -33,7 +33,7 @@ https://docs.docker.com/compose/install/
 #### 使用说明
 
 
-方法1 docker run
+方法1 Docker run
 
     - 运行 redis
 
@@ -42,7 +42,7 @@ https://docs.docker.com/compose/install/
 
     docker run --name filepreview --restart=always -d  --network=host datheng/kk_fileview_wife
 
-方法2 docker-compose
+方法2 Docker-compose
 
     保存 文件 kk-filePreview.yml 到目标机器， 然后运行
 
